@@ -18,7 +18,7 @@ public class Action {
 		Driver.get("https://www.amazon.com/");
 		Actions a=new Actions(Driver); //Driver object will get the capability of Actions class
 		WebElement move=Driver.findElement(By.xpath("//a[@id='nav-link-accountList']"));
-		//a.moveToElement(Driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform(); //Composite actions
+		///a.moveToElement(Driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform(); //Composite actions
 		
 		//moves to specific elements
 		a.moveToElement(move).contextClick().build().perform(); 
